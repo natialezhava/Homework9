@@ -1,0 +1,63 @@
+.image {
+  width: 700px;
+  height: 700px;
+  object-fit: contain;
+}
+.background-img {
+  background-image: url("https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg");
+  height: 900px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: relative;
+}
+.background-img > p {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.pseudo {
+  display: flex;
+  justify-content: space-between;
+}
+.block {
+  width: 200px;
+  height: 200px;
+  background-color: blueviolet;
+}
+.block:nth-child(1) {
+  background-color: aqua;
+}
+.block:nth-child(2) {
+  background-color: chartreuse;
+}
+.block:nth-child(3) {
+  background-color: crimson;
+}
+.block:nth-child(4) {
+  background-color: darkred;
+}
+.hello {
+  color: aliceblue;
+  font-style: italic;
+  background-color: black;
+}
+.block:nth-child(3) .hello {
+  font-size: 35px;
+  color: #fff;
+}
+
+/* pseudo elements */
+
+.pseudo-elem::before {
+  content: "women in tech";
+  color: red;
+  font-size: 42px;
+}
+.pseudo-elem::after {
+  content: "hello2";
+  color: rgb(14, 245, 33);
+  font-size: larger;
+}
